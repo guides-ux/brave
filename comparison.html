@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Brevo vs Other Platforms — Feature Comparison (2026)</title>
+  <meta name="description" content="Compare Brevo with other customer engagement platforms. See features, automation, messaging, CRM, and transactional capabilities side by side." />
+
+  <style>
+    :root{
+      --bg:#fbfbfd;
+      --text:#0b1220;
+      --muted:#4b5563;
+      --line:rgba(15,23,42,.12);
+
+      --c1:#ff4d6d;
+      --c2:#ff8a00;
+      --green:#22c55e;
+
+      --shadow: 0 16px 40px rgba(15,23,42,.10);
+      --max:1100px;
+    }
+
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, -apple-system, Segoe UI, Roboto, Arial;
+      background:
+        radial-gradient(900px 600px at 18% 10%, rgba(255,77,109,.10), transparent 60%),
+        radial-gradient(900px 600px at 85% 25%, rgba(255,138,0,.10), transparent 60%),
+        var(--bg);
+      color:var(--text);
+      line-height:1.5;
+    }
+
+    a{text-decoration:none; color:inherit}
+    .wrap{max-width:var(--max); margin:0 auto; padding:18px 18px 120px}
+
+    /* NAV */
+    .nav{
+      position:sticky;
+      top:0;
+      z-index:60;
+      background:rgba(255,255,255,.85);
+      backdrop-filter: blur(10px);
+      border-bottom:1px solid var(--line);
+    }
+    .navInner{
+      max-width:var(--max);
+      margin:0 auto;
+      padding:10px 18px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+    }
+    .brand{display:flex; align-items:center; gap:10px; font-weight:1000}
+    .logoMark{
+      width:34px; height:34px; border-radius:12px;
+      background:linear-gradient(135deg,#149310,#46c81a);
+      display:flex; align-items:center; justify-content:center;
+      color:#fff; font-weight:1000; font-size:14px;
+    }
+
+    .navLinks{display:flex; gap:8px}
+    .navLinks a{
+      font-size:13px;
+      font-weight:900;
+      padding:10px 12px;
+      border-radius:12px;
+      border:1px solid transparent;
+    }
+    .navLinks a:hover{
+      background:rgba(255,77,109,.06);
+      border-color:rgba(255,77,109,.18);
+    }
+    .navLinks a.active{
+      background:linear-gradient(135deg, rgba(255,77,109,.14), rgba(255,138,0,.10));
+      border-color:rgba(255,77,109,.22);
+    }
+
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      padding:12px 16px;
+      border-radius:14px;
+      font-weight:1000;
+      border:1px solid rgba(15,23,42,.12);
+      cursor:pointer;
+      background:#fff;
+      transition:.2s ease;
+    }
+    .btn.primary{
+      background:linear-gradient(135deg,#149310,#46c81a);
+      color:#fff;
+      border:none;
+      box-shadow:0 18px 40px rgba(34,197,94,.25);
+    }
+    .btn:hover{transform:translateY(-1px)}
+
+    h1{
+      font-size:40px;
+      margin:20px 0 12px;
+      letter-spacing:-.5px;
+    }
+    .sub{
+      color:var(--muted);
+      margin-bottom:30px;
+      max-width:65ch;
+    }
+
+    /* COMPARISON TABLE */
+    .tableWrap{
+      background:#fff;
+      border:1px solid var(--line);
+      border-radius:22px;
+      box-shadow:var(--shadow);
+      overflow-x:auto;
+    }
+
+    table{
+      width:100%;
+      border-collapse:collapse;
+      min-width:750px;
+    }
+
+    thead th{
+      padding:18px;
+      font-size:15px;
+      text-align:left;
+      border-bottom:1px solid var(--line);
+      background:#fafafa;
+    }
+
+    thead th.highlight{
+      background:linear-gradient(135deg, rgba(20,147,16,.12), rgba(70,200,26,.08));
+      border-bottom:2px solid #22c55e;
+    }
+
+    tbody td{
+      padding:16px 18px;
+      border-bottom:1px solid var(--line);
+      font-size:14px;
+    }
+
+    tbody tr:hover{
+      background:rgba(255,77,109,.03);
+    }
+
+    .yes{
+      color:#16a34a;
+      font-weight:900;
+    }
+    .no{
+      color:#dc2626;
+      font-weight:900;
+    }
+    .partial{
+      color:#f59e0b;
+      font-weight:900;
+    }
+
+    .sticky{
+      position:fixed;
+      bottom:0;
+      left:0;
+      right:0;
+      background:#fff;
+      border-top:1px solid var(--line);
+      padding:12px;
+    }
+    .sticky .inner{
+      max-width:var(--max);
+      margin:0 auto;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+    }
+
+    @media(max-width:900px){
+      h1{font-size:30px}
+    }
+  </style>
+</head>
+
+<body>
+
+<header class="nav">
+  <div class="navInner">
+    <a class="brand" href="index.html">
+      <div class="logoMark">BR</div>
+      <div>Brevo Quick Guide</div>
+    </a>
+    <div class="navLinks">
+      <a href="index.html">Overview</a>
+      <a href="features.html">Top Features</a>
+      <a class="active" href="comparison.html">Comparison</a>
+      <a href="faq.html">FAQ</a>
+    </div>
+    <a class="btn primary" id="ctaNav" href="#" target="_blank">Open Provider →</a>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <h1>Brevo vs Other Customer Engagement Platforms</h1>
+  <p class="sub">
+    See how Brevo compares across messaging channels, automation, CRM, and transactional capabilities.
+  </p>
+
+  <div class="tableWrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Feature</th>
+          <th class="highlight">Brevo</th>
+          <th>Email-First Platforms</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Email Campaigns</td>
+          <td class="yes">✓ Included</td>
+          <td class="yes">✓ Included</td>
+        </tr>
+        <tr>
+          <td>SMS Marketing</td>
+          <td class="yes">✓ Native</td>
+          <td class="partial">Add-on / Integration</td>
+        </tr>
+        <tr>
+          <td>WhatsApp Campaigns</td>
+          <td class="yes">✓ Available</td>
+          <td class="no">✕ Not Standard</td>
+        </tr>
+        <tr>
+          <td>Built-in CRM</td>
+          <td class="yes">✓ Included</td>
+          <td class="partial">Limited / Paid Tier</td>
+        </tr>
+        <tr>
+          <td>Marketing Automation</td>
+          <td class="yes">✓ Visual Workflows</td>
+          <td class="yes">✓ Advanced</td>
+        </tr>
+        <tr>
+          <td>Transactional Email (SMTP/API)</td>
+          <td class="yes">✓ Integrated</td>
+          <td class="partial">Separate Product</td>
+        </tr>
+        <tr>
+          <td>Multi-Channel in One Dashboard</td>
+          <td class="yes">✓ Yes</td>
+          <td class="no">✕ Usually Split Tools</td>
+        </tr>
+        <tr>
+          <td>Consolidated Pricing Model</td>
+          <td class="yes">✓ Simplified</td>
+          <td class="partial">Multiple Add-Ons</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</div>
+
+<div class="sticky">
+  <div class="inner">
+    <div>Compare plans and features directly on the official website.</div>
+    <a class="btn primary" id="ctaSticky" href="#" target="_blank">Open Brevo →</a>
+  </div>
+</div>
+
+<script>
+  const OUT_URL = "";
+
+  document.getElementById("ctaNav").href = OUT_URL;
+  document.getElementById("ctaSticky").href = OUT_URL;
+</script>
+
+</body>
+</html>
