@@ -232,7 +232,38 @@
     }
 
     .btnrow{display:flex; gap:12px; flex-wrap:wrap}
-    .note{margin-top:10px; color:var(--muted); font-size:13px}
+    .note{margin-top:12px; color:var(--muted); font-size:13px}
+
+    /* NEW CAPABILITIES SECTION */
+    .capabilitiesTitle{
+      font-size:22px;
+      font-weight:900;
+      margin-top:22px;
+      margin-bottom:12px;
+    }
+    .capItem{
+      display: flex;
+    gap: 12px;
+    align-items: center;
+    border: 1px solid rgba(15, 23, 42, .10);
+    background: linear-gradient(135deg, #149310, #46c81a);
+    border-radius: 18px;
+    padding: 12px;
+    margin-bottom: 10px;
+    }
+    .capIcon{
+      width: 42px;
+    height: 42px;
+    border-radius: 12px;
+    background: rgb(43 42 32);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    flex: 0 0 auto;
+    }
+    .capItem b{display:block; margin-bottom:4px; color:#fff;}
+    .capItem span{color:var(--muted); font-size:14px}
 
     .chips{
       display:flex;
@@ -260,33 +291,6 @@
       box-shadow:0 0 0 5px rgba(255,77,109,.10);
       flex:0 0 auto;
     }
-
-    .why{
-      margin-top:14px;
-      display:grid;
-      gap:10px;
-    }
-    .whyItem{
-      display:flex;
-      gap:12px;
-      align-items:flex-start;
-      border:1px solid rgba(15,23,42,.10);
-      background:rgba(255,255,255,.92);
-      border-radius:18px;
-      padding:14px;
-    }
-    .tick{
-      width:20px; height:20px; border-radius:8px;
-      background:rgba(34,197,94,.10);
-      border:1px solid rgba(34,197,94,.30);
-      display:flex; align-items:center; justify-content:center;
-      color:var(--green);
-      font-weight:1000;
-      flex:0 0 auto;
-      margin-top:2px;
-    }
-    .whyItem b{display:block; margin-bottom:3px}
-    .whyItem span{color:var(--muted); font-size:14px}
 
     .right{
       border:1px solid rgba(15,23,42,.10);
@@ -368,7 +372,7 @@
       </nav>
 
       <div class="navRight">
-        <a class="btn primary" id="ctaNav" href="#" rel="nofollow noopener" target="_blank">
+        <a class="btn primary" id="ctaNav" href="https://inpmz.ttrk.io/click" rel="nofollow noopener" target="_blank">
           Open Provider →
         </a>
 
@@ -391,7 +395,7 @@
           <a href="privacy.html">Privacy</a>
           <a href="terms.html">Terms</a>
         </div>
-        <a class="btn primary" id="ctaMobile" href="#" rel="nofollow noopener" target="_blank" style="width:100%">
+        <a class="btn primary" id="ctaMobile" href="https://inpmz.ttrk.io/click" rel="nofollow noopener" target="_blank" style="width:100%">
           Open Provider →
         </a>
       </div>
@@ -406,7 +410,7 @@
 
         <!-- LEFT -->
         <div>
-          <h1><span class="hglow">Brevo</span> plans: multi-channel engagement made simple</h1>
+          <h1><span class="hglow">Brevo:</span> Grow with our email marketing & CRM suite</h1>
 
           <p class="sub">
             If you're comparing customer engagement tools, Brevo is popular for running campaigns across
@@ -416,45 +420,63 @@
 
           <div class="btnrow">
             <a class="btn primary" id="ctaMain" href="#" rel="nofollow noopener" target="_blank">
-              Start on Official Site →
+              Start for Free →
             </a>
             <a class="btn secondary" id="ctaSecondary" href="#" rel="nofollow noopener" target="_blank">
               See Plans & Options
             </a>
           </div>
 
-          <div class="why">
-            <div class="whyItem">
-              <div class="tick">✓</div>
-              <div>
-                <b>Multi-channel from one dashboard</b>
-                <span>Manage email plus messaging campaigns in one workspace.</span>
-              </div>
-            </div>
+          <div class="capabilitiesTitle">Capabilities</div>
 
-            <div class="whyItem">
-              <div class="tick">✓</div>
-              <div>
-                <b>Automation without heavy engineering</b>
-                <span>Build journeys with triggers, segments, and simple flow logic.</span>
-              </div>
+          <div class="capItem">
+            <div class="capIcon">📢</div>
+            <div>
+              <b>Campaigns & automation</b>
             </div>
+          </div>
 
-            <div class="whyItem">
-              <div class="tick">✓</div>
-              <div>
-                <b>Transactional + marketing together</b>
-                <span>Useful for receipts, OTPs, updates, and lifecycle follow-ups.</span>
-              </div>
+          <div class="capItem">
+            <div class="capIcon">✉️</div>
+            <div>
+              <b>Transactional messaging</b>
+            </div>
+          </div>
+
+          <div class="capItem">
+            <div class="capIcon">📊</div>
+            <div>
+              <b>Sales management</b>
+            </div>
+          </div>
+
+          <div class="capItem">
+            <div class="capIcon">🗂️</div>
+            <div>
+              <b>Brevo Data Platform</b>
+            </div>
+          </div>
+
+          <div class="capItem">
+            <div class="capIcon">⭐</div>
+            <div>
+              <b>Customer loyalty</b>
+            </div>
+          </div>
+
+          <div class="capItem">
+            <div class="capIcon">🔗</div>
+            <div>
+              <b>Integrations</b>
             </div>
           </div>
 
           <div class="note">
-            <br>
+            <br />
             Disclosure: This website contains affiliate links, which means we may receive a commission if you click a link and purchase something that we have recommended. While clicking these links won't cost you any extra money, it helps us keep this site up and running.
-            <br><br>
+            <br /><br />
             <a href="privacy.html">Privacy</a> • <a href="terms.html">Terms</a>
-            <br><br>
+            <br /><br />
             This page is NOT the official Brevo website.
           </div>
         </div>
@@ -488,7 +510,6 @@
             Checkout and signup happen on the provider website.
           </div>
 
-          <!-- CHIPS IN RIGHT BOTTOM -->
           <div class="chips" style="margin-top:16px">
             <div class="chip"><span class="dot"></span>Email campaigns</div>
             <div class="chip"><span class="dot"></span>SMS & messaging</div>
@@ -510,7 +531,7 @@
   <div class="sticky">
     <div class="inner">
       <div class="txt">Compare options & start on the official Brevo website.</div>
-      <a class="btn primary" id="ctaSticky" href="#" rel="nofollow noopener" target="_blank">Open Provider →</a>
+      <a class="btn primary" id="ctaSticky" href="https://inpmz.ttrk.io/click" rel="nofollow noopener" target="_blank">Open Provider →</a>
     </div>
   </div>
 
