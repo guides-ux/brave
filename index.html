@@ -202,6 +202,36 @@ font-size:13px;
 color:#666;
 }
 
+    .keywordChips{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  margin-top:12px;
+}
+
+.smallChip{
+  display:inline-flex;
+  align-items:center;
+  gap:7px;
+  padding:7px 12px;
+  border-radius:999px;
+  background:#fff;
+  border:1px solid rgba(15,23,42,.10);
+  color:#111827;
+  font-size:12px;
+  font-weight:700;
+  line-height:1;
+  white-space:nowrap;
+}
+
+.miniDot{
+  width:7px;
+  height:7px;
+  border-radius:50%;
+  background:linear-gradient(135deg,#149310,#46c81a);
+  flex:0 0 auto;
+}
+
 </style>
 
 <script src="https://inpmz.ttrk.io/track.js?rtkcmpid=68f1ea0fa9e9aaeb4832c4a1"></script>
@@ -289,6 +319,16 @@ Alternative to Mailchimp
 <div class="chip">
 <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png">
 Compare with ActiveCampaign
+</div>
+
+    <div class="chips keywordChips">
+        <h3>Popular Email Marketing Tools</h3>
+  <span class="chip smallChip">Mailerlite</span>
+  <span class="chip smallChip">Aweber</span>
+  <span class="chip smallChip">Mailjet</span>
+  <span class="chip smallChip">Moosend</span>
+  <span class="chip smallChip">Constant Contact</span>
+  <span class="chip smallChip">Mailchimp</span>
 </div>
 
 </div>
@@ -400,6 +440,7 @@ if(el)el.href=OUT_URL;
 
 </body>
 </html>
+
 
 
 
