@@ -28,6 +28,56 @@ background:var(--bg);
 color:var(--text);
 }
 
+/* HEADER */
+
+.header{
+position:sticky;
+top:0;
+background:#fff;
+border-bottom:1px solid rgba(0,0,0,.08);
+z-index:100;
+}
+
+.nav{
+max-width:var(--max);
+margin:auto;
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:14px 18px;
+}
+
+.logo{
+font-weight:800;
+font-size:18px;
+}
+
+.navLinks{
+display:flex;
+gap:18px;
+align-items:center;
+}
+
+.navLinks a{
+text-decoration:none;
+color:#111;
+font-size:14px;
+font-weight:600;
+}
+
+.navBtn{
+background:linear-gradient(135deg,#df0909,#46c81a);
+color:#fff;
+padding:9px 14px;
+border-radius:10px;
+font-size:13px;
+text-decoration:none;
+}
+
+@media(max-width:700px){
+.navLinks a{display:none}
+}
+
 .wrap{
 max-width:var(--max);
 margin:auto;
@@ -127,15 +177,15 @@ gap:10px;
 }
 
 .chip{
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    padding: 8px 12px;
-    border-radius: 999px;
-    background: #fff0f0;
-    border: 1px solid rgba(0, 0, 0, .1);
-    font-size: 10px;
-    color: #fe0000;
+display:flex;
+align-items:center;
+gap:8px;
+padding:8px 12px;
+border-radius:999px;
+background:#fff0f0;
+border:1px solid rgba(0,0,0,.1);
+font-size:10px;
+color:#fe0000;
 }
 
 .chip img{
@@ -159,12 +209,12 @@ color:#fff;
 padding:12px;
 border-radius:16px;
 margin-bottom:10px;
-        width: 42%;
+width:42%;
 }
 
 .capIcon{
-    width: 32px;
-    height: 28px;
+width:32px;
+height:28px;
 background:#2b2a20;
 display:flex;
 align-items:center;
@@ -202,34 +252,25 @@ font-size:13px;
 color:#666;
 }
 
-    .keywordChips{
-  display:flex;
-  flex-wrap:wrap;
-  gap:8px;
-  margin-top:12px;
+.keywordChips{
+display:flex;
+flex-wrap:wrap;
+gap:8px;
+margin-top:12px;
 }
 
 .smallChip{
-  display:inline-flex;
-  align-items:center;
-  gap:7px;
-  padding:7px 12px;
-  border-radius:999px;
-  background:#fff;
-  border:1px solid rgba(15,23,42,.10);
-  color:#111827;
-  font-size:12px;
-  font-weight:700;
-  line-height:1;
-  white-space:nowrap;
-}
-
-.miniDot{
-  width:7px;
-  height:7px;
-  border-radius:50%;
-  background:linear-gradient(135deg,#149310,#46c81a);
-  flex:0 0 auto;
+display:inline-flex;
+align-items:center;
+gap:7px;
+padding:7px 12px;
+border-radius:999px;
+background:#fff;
+border:1px solid rgba(15,23,42,.10);
+color:#111827;
+font-size:12px;
+font-weight:700;
+white-space:nowrap;
 }
 
 </style>
@@ -240,15 +281,38 @@ color:#666;
 
 <body>
 
+<!-- HEADER -->
+
+<header class="header">
+
+<div class="nav">
+
+<div class="logo">Brevo Guide</div>
+
+<div class="navLinks">
+<a href="#">Overview</a>
+<a href="#">Features</a>
+<a href="#">Automation</a>
+<a href="#">Pricing</a>
+
+<a class="navBtn" href="https://inpmz.ttrk.io/click" target="_blank">
+Open Brevo →
+</a>
+</div>
+
+</div>
+
+</header>
+
 <div class="wrap">
 
 <div class="panel">
 
 <div class="hero">
 
-    <!-- RIGHT SIDE -->
+<!-- RIGHT SIDE CONTENT -->
 
-  <div>
+<div>
 
 <h1><span class="hglow">Brevo:</span> Grow with email marketing & CRM</h1>
 
@@ -262,22 +326,23 @@ Free plan available — 300 emails/day
 
 <div class="btnrow">
 
-<a class="btn primary" id="ctaMain" href="#" target="_blank" style="background: linear-gradient(135deg, #df0909, #46c81a);">
+<a class="btn primary" id="ctaMain" href="#" target="_blank" style="background:linear-gradient(135deg,#df0909,#46c81a);">
 Sign up free
 </a>
 
-<a class="btn" id="ctaSecondary" href="#" target="_blank" style="background: linear-gradient(135deg, #df0909, #46c81a); color:#fff;">
+<a class="btn" id="ctaSecondary" href="#" target="_blank" style="background:linear-gradient(135deg,#df0909,#46c81a);color:#fff;">
 Get a Demo
 </a>
 
 </div>
-
 
 <div class="btnrow">
 <a class="btn primary" id="ctaSide" href="#" target="_blank">
 Open Brevo → (Plans & Signup)
 </a>
 </div>
+
+<!-- CHIPS -->
 
 <div class="chips">
 
@@ -296,57 +361,39 @@ SMS messaging
 WhatsApp campaigns
 </div>
 
-<div class="chip">
-<img src="https://cdn-icons-png.flaticon.com/512/1828/1828919.png">
-No-code automation
 </div>
 
-<div class="chip">
-<img src="https://cdn-icons-png.flaticon.com/512/747/747376.png">
-CRM contact view
-</div>
+<h3>Popular Email Marketing Tools</h3>
 
-<div class="chip">
-<img src="https://cdn-icons-png.flaticon.com/512/747/747310.png">
-Transactional messaging
-</div>
+<div class="chips keywordChips">
 
-<div class="chip">
-<img src="https://cdn-icons-png.flaticon.com/512/5968/5968879.png">
-Alternative to Mailchimp
-</div>
-
-<div class="chip">
-<img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png">
-Compare with ActiveCampaign
-</div>
-
-     <h3>Popular Email Marketing Tools</h3>
-    <div class="chips keywordChips">
-       
-  <span class="chip smallChip">Mailerlite</span>
-  <span class="chip smallChip">Aweber</span>
-  <span class="chip smallChip">Mailjet</span>
-  <span class="chip smallChip">Moosend</span>
-  <span class="chip smallChip">Constant Contact</span>
-  <span class="chip smallChip">Mailchimp</span>
-</div>
+<span class="chip smallChip">Mailerlite</span>
+<span class="chip smallChip">Aweber</span>
+<span class="chip smallChip">Mailjet</span>
+<span class="chip smallChip">Moosend</span>
+<span class="chip smallChip">Constant Contact</span>
+<span class="chip smallChip">Mailchimp</span>
 
 </div>
 
-         <div class="note">
-Disclosure: This page contains affiliate links. If you click and purchase we may earn a commission.
+<div class="note">
+
+Disclosure: This page contains affiliate links.
+
 <br><br>
-<a href="privacy.html">Privacy</a> • <a href="terms.html">Terms</a>
+
+<a href="privacy.html">Privacy</a> • 
+<a href="terms.html">Terms</a>
+
 <br><br>
+
 This page is NOT the official Brevo website.
-</div>
 
 </div>
 
- 
+</div>
 
-  <!-- LEFT SIDE -->
+<!-- LEFT SIDE CARD -->
 
 <div class="rightCard">
 
@@ -358,45 +405,6 @@ This page is NOT the official Brevo website.
 <b>Quick decision tip</b>
 <p>If you already know which channels you need (email + SMS/WhatsApp), open the official site to confirm plan limits.</p>
 </div>
-
-<div class="capabilitiesTitle">Capabilities</div>
-
-        <div style="    display: flex;
-    flex-wrap: wrap;
-    column-gap: 20px;
-    justify-content: space-around;">
-<div class="capItem">
-<div class="capIcon">📢</div>
-<b>Campaigns & automation</b>
-</div>
-
-<div class="capItem">
-<div class="capIcon">✉️</div>
-<b>Transactional messaging</b>
-</div>
-
-<div class="capItem">
-<div class="capIcon">📊</div>
-<b>Sales management</b>
-</div>
-
-<div class="capItem">
-<div class="capIcon">🗂️</div>
-<b>Brevo Data Platform</b>
-</div>
-
-<div class="capItem">
-<div class="capIcon">⭐</div>
-<b>Customer loyalty</b>
-</div>
-
-<div class="capItem">
-<div class="capIcon">🔗</div>
-<b>Integrations</b>
-</div>
-                </div>
-
-
 
 </div>
 
@@ -413,18 +421,20 @@ This page is NOT the official Brevo website.
 <div class="inner">
 
 <div class="txt">
-    <h2 style="    color: #ff0303;">Ready to grow with Brevo?</h2>
-
+<h2 style="color:#ff0303;">Ready to grow with Brevo?</h2>
 </div>
 
-    <div>
-<a class="btn primary" id="ctaSticky" href="https://inpmz.ttrk.io/click" target="_blank" style="background: linear-gradient(135deg, #df0909, #46c81a); color:#fff;">
+<div>
+
+<a class="btn primary" href="https://inpmz.ttrk.io/click" target="_blank" style="background:linear-gradient(135deg,#df0909,#46c81a);">
 Sign up free →
 </a>
-    <a class="btn primary" id="ctaSticky" href="https://inpmz.ttrk.io/click" target="_blank" style="background: linear-gradient(135deg, #df0909, #46c81a); color:#fff;">
+
+<a class="btn primary" href="https://inpmz.ttrk.io/click" target="_blank" style="background:linear-gradient(135deg,#df0909,#46c81a);">
 Get a demo →
 </a>
-        </div>
+
+</div>
 
 </div>
 
@@ -443,17 +453,3 @@ if(el)el.href=OUT_URL;
 
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
